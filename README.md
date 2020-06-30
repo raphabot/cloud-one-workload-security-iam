@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project!
+# Cloud One - Workload Security IAM CDK Stack
 
-This is a blank project for TypeScript development with CDK.
+The goal of this project is to help Cloud One - Workload Security customers to rapdily deploy the necessary IAM stack to their various AWS account via CDK or, if needed, in CloudFormation after synthesizing it.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Required Parameters:
+
+ * `ExternalId`                                                     External ID you retrieved from the manager.
 
 ## Useful commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy --parameters ExternalId=YOUR_EXTERNAL_ID_HERE`       deploy this stack to your default AWS account/region
+ * `cdk synth`                                                      emits the synthesized CloudFormation template
